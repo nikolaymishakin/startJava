@@ -22,20 +22,20 @@ public class ConditionalStatement {
 
         System.out.println("Введите Ваш рост:");
         double height = scanner.nextDouble();
-        if (height <= 1.8) {
+        if (height < 1.8) {
             System.out.println("Ваш рост меньше 1 метра 80 сантиметров");
         } else {
             System.out.println("Ваш рост больше 1 метра 80 сантиметров");
         }
 
         System.out.println("Введите первую букву Вашего имени:");
-            char name = (char) System.in.read (); 
-            if (name == 'M') {
+        char name = (char) System.in.read (); 
+        if (name == 'M') {
             System.out.println("Вас могут звать Mikle");
             } else if (name == 'I') {
-            System.out.println("Вас могут звать Ilya");
-            } else {
-            System.out.println("Вас могут звать как угодно");
+                System.out.println("Вас могут звать Ilya");
+                } else {
+                    System.out.println("Вас могут звать как угодно");
             }
     }
 }
