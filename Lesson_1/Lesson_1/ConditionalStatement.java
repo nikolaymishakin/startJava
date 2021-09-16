@@ -1,8 +1,7 @@
 import java.util.Scanner;
-import static java.lang.Math.*;
 
 public class ConditionalStatement {
-    public static void main(String[] args) throws java.io.IOException {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in); 
         System.out.println("Введите Ваш возраст:");
         int age = scanner.nextInt();
@@ -10,15 +9,13 @@ public class ConditionalStatement {
             System.out.println("Вам больше 20");
         }
 
-        System.out.println("Введите М если Вы мужчина или Ж если женщина:");
+        System.out.println("Введите Ваш пол:");
         char gender = scanner.next().charAt(0);
-        boolean isGender = gender == 'M';
-        if (isGender) {
-            System.out.println("Вы мужчина");
-        }
-        if (!isGender) {
-            System.out.println("Вы женщина");
-        }
+        if (gender == 'M') {
+           System.out.println("Вы мужчина");
+       } else  if (gender != 'M') {
+           System.out.println("Вы женщина");
+       }
 
         System.out.println("Введите Ваш рост:");
         double height = scanner.nextDouble();
@@ -29,13 +26,13 @@ public class ConditionalStatement {
         }
 
         System.out.println("Введите первую букву Вашего имени:");
-        char name = (char) System.in.read (); 
+        char name = scanner.next().charAt(0);
         if (name == 'M') {
             System.out.println("Вас могут звать Mikle");
-            } else if (name == 'I') {
-                System.out.println("Вас могут звать Ilya");
-                } else {
-                    System.out.println("Вас могут звать как угодно");
+        } else if (name == 'I') {
+            System.out.println("Вас могут звать Ilya");
+        } else {
+            System.out.println("Вас могут звать как угодно");
             }
     }
 }

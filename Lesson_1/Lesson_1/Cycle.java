@@ -1,6 +1,6 @@
 public class Cycle {
     public static void main(String[] args) {
-        for(int i = 0;i <= 20;i++) {
+        for(int i = 0; i <= 20; i++) {
             System.out.println(i);
         }
         System.out.println();
@@ -15,7 +15,7 @@ public class Cycle {
         i = 10;
         int sum = 0;
         do {
-            if(i%2 == 1) {
+            if(i % 2 == 1) {
                 sum += i;
             }
             i++;
